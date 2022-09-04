@@ -8,15 +8,11 @@
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
 body{
-    /* width: 100%; */
-    /* min-height: 100vh; */
     width: 1440px;
     margin: auto;
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    /* height: auto; */
-    /* height: 50%; */
 
 }
 
@@ -32,12 +28,8 @@ body{
 }
 
 
-
 .container{
 
-    /* width: 50%; */
-    /* padding: 10px;
-    margin: 20px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -45,7 +37,6 @@ body{
     background-color: white;
     border-radius: 15px;
     max-width: 580px;
-
 
 }
 
@@ -59,16 +50,16 @@ img{
     object-fit: fill;
 }
 
+
 .product{
     padding: 0 32px;
-    /* margin: 0 80px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     width: 50%;
-
 }
+
 
 .classification{
     font-size: 0.7rem;
@@ -125,11 +116,12 @@ img{
 
 }
 
+
+
 button{
-    /* border: none; */
     border-radius: 6px;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 15px 0;
     margin: 0;
     color: white;
@@ -143,32 +135,21 @@ button:hover{
     transition: 1s;
 }
 
-/* 
-.fa-light{
-    color: black;
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 2rem;
-    overflow: visible;
-} */
 
 button i{
     color: white;
-
     width: 2.5rem;
     font-size: 1rem;
-    overflow: visible;
 }
 
 
 
-
+/* RESPONSIVINESS */
 
 @media (max-width: 376px) {
 
     body{
         max-width: 400px;
-
     }
 
     .card{
@@ -197,7 +178,6 @@ button i{
   
     .product {
         padding: 25px;
-        /* margin: 20px; */
         width: 100%;
     }
 
