@@ -15,20 +15,27 @@ body{
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    /* height: auto; */
+    /* height: 50%; */
+
 }
+
+
 
 .card{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 
 
 .container{
 
-    width: 80%;
+    /* width: 50%; */
     /* padding: 10px;
     margin: 20px; */
     overflow: hidden;
@@ -36,49 +43,56 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
+    max-width: 580px;
+
+
 }
 
-
-
 .image{
-    width: 80%;
+    width: 50%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
 }
 
 .product{
-   padding: 0 80px;
+    padding: 0 32px;
     /* margin: 0 80px; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    width: 50%;
 
 }
 
 .classification{
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     letter-spacing: 8px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 
 .name{
     font-family: 'Fraunces', serif;
-    font-size: 3.8rem;
-    margin-bottom: 40px;
-
-    
+    font-size: 1.9rem;
+    margin-bottom: 20px;
 }
 
 
 .description{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 50px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    margin-right: 3px;
     line-height: 1.5;
     color: hsl(228, 12%, 48%);
 }
@@ -91,21 +105,21 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .sale{
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     font-family: 'Fraunces', serif;
 
     color: hsl(158, 36%, 37%);
 }
 
 .original{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
-    margin: 5px 0 5px 25px;
+    margin: 5px 0 5px 10px;
     text-decoration: line-through;
     color: hsl(228, 12%, 48%);;
 
@@ -113,14 +127,20 @@ body{
 
 button{
     /* border: none; */
-    border-radius: 15px;
-    font-size: 1.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
     font-weight: 500;
-    padding: 30px 0;
+    padding: 15px 0;
     margin: 0;
     color: white;
     background-color: hsl(158, 36%, 37%);
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+    transition: 1s;
 }
 
 /* 
@@ -134,9 +154,52 @@ button{
 
 button i{
     color: white;
-    height: 2.5rem;
+
     width: 2.5rem;
-    margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     overflow: visible;
 }
+
+
+
+
+
+@media (max-width: 376px) {
+
+    body{
+        max-width: 400px;
+
+    }
+
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        align-items: center;
+        justify-content: center;
+        max-width: 375px;
+        width: 80%;
+
+    }
+    .image {
+        content: url("./images/image-product-mobile.jpg");
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+  
+    .product {
+        padding: 25px;
+        /* margin: 20px; */
+        width: 100%;
+    }
+
+
+  }
